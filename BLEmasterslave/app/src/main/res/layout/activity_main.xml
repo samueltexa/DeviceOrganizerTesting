@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/custom_toolbar"/>
+
+    <!--fragment holder-->
+    <fragment
+            android:id="@+id/nav_host_fragment_activity_main"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toTopOf="@id/nav_view"
+            app:navGraph="@navigation/mobile_navigation"
+            android:layout_below="@id/custom"
+            android:layout_above="@id/nav_view"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"/>
+
+<!--bottom navigation bar-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            app:itemTextColor="@color/white"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blue"
+            app:menu="@menu/bottom_navigation"
+            android:layout_marginBottom="3dp"/>
+</RelativeLayout>

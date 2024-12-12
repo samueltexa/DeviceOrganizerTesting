@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">BLEmasterslave</string>
+    <string name="default_advertise">DEFAULT</string>
+    <string name="custom_advertise">CUSTOM</string>
+    <string name="stopAdvertising">STOP ADVERTISING</string>
+    <string name="scan">START SCANNING</string>
+    <string name="stop">STOP SCANNING</string>
+
+<!--    strings for bottom navigation-->
+    <string name="scanner">SCAN</string>
+    <string name="advertiser">ADVERTISE</string>
+
+    <!--    strings for toolbar navigation-->
+    <string name="map">Map</string>
+    <string name="history">History</string>
+    <string name="location">Location</string>
+    <string name="advertise">ADVERTISE</string>
+    <string name="advertising_configuration">Advertisng Configuration</string>
+    <string name="include_tx_power">Include Tx Power</string>
+    <string name="enter_uuid">Enter UUID</string>
+    <string name="include_device_name">Include Device Name</string>
+    <string name="enter_major_optional">Enter Major(Optional)</string>
+    <string name="enter_minor_optional">Enter Minor(Optional)</string>
+</resources>

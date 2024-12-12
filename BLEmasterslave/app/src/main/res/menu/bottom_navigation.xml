@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/scanner"
+            android:icon="@drawable/scanbluetooth"
+            android:title="@string/scanner"/>
+
+    <item
+            android:id="@+id/advertiser"
+            android:icon="@drawable/ibeacon"
+            android:title="@string/advertiser"/>
+</menu>

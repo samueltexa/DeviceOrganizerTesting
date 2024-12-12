@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/advertising_configuration"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:textColor="@color/black"/>
+
+    <CheckBox
+            android:id="@+id/device_name_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/include_device_name" />
+
+    <EditText
+            android:id="@+id/uuid_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_uuid"
+            android:autofillHints="Enter UUID"
+            android:inputType="text"
+            android:textIsSelectable="true"
+            android:longClickable="true"/>
+
+    <EditText
+            android:id="@+id/major"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_major_optional"
+            android:autofillHints="Enter Major"
+            android:inputType="text"
+            android:textIsSelectable="true"
+            android:longClickable="true"/>
+
+    <EditText
+            android:id="@+id/minor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_minor_optional"
+            android:autofillHints="Enter Minor"
+            android:inputType="text"
+            android:textIsSelectable="true"
+            android:longClickable="true"/>
+
+    <Button android:id="@+id/advertiseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/advertise"
+            android:layout_gravity="center">
+    </Button>
+</LinearLayout>
